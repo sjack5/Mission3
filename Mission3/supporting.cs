@@ -35,31 +35,31 @@ namespace Mission3
                 {
                     if (arr[0] == arr[1] && arr[1] == arr[2])
                     {
-                        return(flag = 1);
+                        flag = 1;
                         return (arr[0]);
                     }
                     if (arr[3] == arr[4] && arr[4] == arr[5])
                     {
-                        return(flag = 1);
-                        return(arr[3]);
+                        flag = 1; 
+                        return (arr[3]);
 
                     }
                     if (arr[6] == arr[7] && arr[7] == arr[8])
                     {
-                        return(flag = 1);
-                        return(arr[6]);
+                        flag = 1; 
+                        return (arr[6]);
 
                     }
                     if (arr[0] == arr[4] && arr[4] == arr[8])
                     {
-                        return(flag = 1);
-                        return(arr[0]);
+                        flag = 1; 
+                        return (arr[0]);
 
                     }
                     if (arr[2] == arr[4] && arr[4] == arr[6])
                     {
-                        return(flag = 1);
-                        return(arr[2]);
+                        flag = 1; 
+                        return (arr[2]);
 
                     }
                 }
