@@ -23,7 +23,7 @@ namespace Mission3
 
                     otherTeam.BoardPrint(board);
 
-                    otherTeam.Win(board);
+                    otherTeam.Winner(board);
                 }
                 else
                 {
