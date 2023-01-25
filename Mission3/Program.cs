@@ -23,7 +23,13 @@ namespace Mission3
 
                     otherTeam.BoardPrint(board);
 
-                    otherTeam.Winner(board);
+                    char test = otherTeam.Winner(board);
+
+                    if (test == 'X')
+                    {
+                        i = 10;
+                        Console.WriteLine("Congrats! Player 1 won!");
+                    }
                 }
                 else
                 {
@@ -31,6 +37,18 @@ namespace Mission3
                     int player2Choice = Convert.ToInt32(Console.ReadLine());
 
                     board[player2Choice] = 'O';
+
+                    otherTeam.BoardPrint(board);
+
+                    char test = otherTeam.Winner(board);
+
+                    Console.WriteLine(test);
+
+                    if (test == 'O')
+                    {
+                        i = 10;
+                        Console.WriteLine("Congrats! Player 2 won!");
+                    }
                 }
             }
         }
