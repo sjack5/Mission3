@@ -12,7 +12,7 @@ namespace Mission3
         
 
         //Contain a method that prints the board based on the information passed in
-        public static void BoardPrint(char[] arr)
+        public void BoardPrint(char[] arr)
         {
             Console.WriteLine("|   |   |   |");
             Console.WriteLine("| {1} | {2} | {3} |", arr[0], arr[1], arr[2]);
@@ -26,7 +26,7 @@ namespace Mission3
         }
 
         //Contain a method that receives the game board array as input and returns if there is a winner and who it was
-        public static void Winner(char[] arr)
+        public void Winner(char[] arr)
         {
             int flag = 0;
             while (flag != 1)
