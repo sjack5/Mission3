@@ -35,32 +35,34 @@ namespace Mission3
                 {
                     if (arr[0] == arr[1] && arr[1] == arr[2])
                     {
-                        flag = 1;
-                        Console.WriteLine(arr[0] + " is the winner!");
+                        return(flag = 1);
+                        return (arr[0]);
                     }
                     if (arr[3] == arr[4] && arr[4] == arr[5])
                     {
-                        flag = 1;
-                        Console.WriteLine(arr[3] + " is the winner!");
+                        return(flag = 1);
+                        return(arr[3]);
+
                     }
                     if (arr[6] == arr[7] && arr[7] == arr[8])
                     {
-                        flag = 1;
-                        Console.WriteLine(arr[6] + " is the winner!");
+                        return(flag = 1);
+                        return(arr[6]);
+
                     }
                     if (arr[0] == arr[4] && arr[4] == arr[8])
                     {
-                        flag = 1;
-                        Console.WriteLine(arr[0] + " is the winner!");
+                        return(flag = 1);
+                        return(arr[0]);
+
                     }
                     if (arr[2] == arr[4] && arr[4] == arr[6])
                     {
-                        flag = 1;
-                        Console.WriteLine(arr[2] + " is the winner!");
+                        return(flag = 1);
+                        return(arr[2]);
+
                     }
                 }
-                Console.WriteLine("Game is a Tie!");
-
             }   
         }
     }
