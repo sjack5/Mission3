@@ -24,7 +24,7 @@ namespace Mission3
         }
 
         //Contain a method that receives the game board array as input and returns if there is a winner and who it was
-        public char Winner(char[] arr)
+        public string Winner(char[] arr)
         {
             int flag = 0;
             while (flag != 1)
