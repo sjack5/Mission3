@@ -32,7 +32,7 @@ namespace Mission3
             public static void Winner()
             {
                 flag = 0;
-                while flag = !1
+                while flag =! 1
                 {
                     if array[0] == arr[1] && arr[1] == arr[2]
                     {
