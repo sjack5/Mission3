@@ -36,29 +36,33 @@ namespace Mission3
                         flag = 1;
                         return ((char)arr[0]);
                     }
-                    if (arr[3] == arr[4] && arr[4] == arr[5])
+                    else if (arr[3] == arr[4] && arr[4] == arr[5])
                     {
                         flag = 1; 
                         return ((char)arr[3]);
 
                     }
-                    if (arr[6] == arr[7] && arr[7] == arr[8])
+                    else if (arr[6] == arr[7] && arr[7] == arr[8])
                     {
                         flag = 1; 
                         return ((char)arr[6]);
 
                     }
-                    if (arr[0] == arr[4] && arr[4] == arr[8])
+                    else if (arr[0] == arr[4] && arr[4] == arr[8])
                     {
                         flag = 1; 
                         return ((char)arr[0]);
 
                     }
-                    if (arr[2] == arr[4] && arr[4] == arr[6])
+                    else if (arr[2] == arr[4] && arr[4] == arr[6])
                     {
                         flag = 1; 
                         return ((char)arr[2]);
 
+                    }
+                    else
+                    {
+                        flag = 0;
                     }
                 }
             }   
