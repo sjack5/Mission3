@@ -69,7 +69,7 @@ namespace Mission3
                 return (arr[2]);
 
             }
-            return'N'
+            return 'N';
         }
     }
 }
