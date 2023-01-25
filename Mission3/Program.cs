@@ -8,6 +8,8 @@ namespace Mission3
         {
             Console.WriteLine("Welcome to Tic-Tac-Toe with group 1-3!");
 
+            supporting otherTeam = new supporting();
+
             char[] board = new char[9];
 
             for (int i = 0; i < 9; i++)
@@ -18,6 +20,10 @@ namespace Mission3
                     int player1Choice = Convert.ToInt32(Console.ReadLine());
 
                     board[player1Choice] = 'X';
+
+                    otherTeam.BoardPrint(board);
+
+                    otherTeam.Win(board);
                 }
                 else
                 {
