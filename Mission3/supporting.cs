@@ -9,51 +9,56 @@ namespace Mission3
     public class supporting
     {
         //Receive the “board” array from the driver class
-
-        //Contain a method that prints the board based on the information passed in
-        public static void BoardPrint()
+        public static void recieve(char[] arr)
         {
-            Console.WriteLine('|   |   |   |');
-            Console.WriteLine('| {1} | {2} | {3} |', board[0], board[1], board[2]);
-            Console.WriteLine('|___________|');
-            Console.WriteLine('|   |   |   |');
-            Console.WriteLine('| {1} | {2} | {3} |', board[3], board[4], board[5]);
-            Console.WriteLine('|___________|');
-            Console.WriteLine('|   |   |   |');
-            Console.WriteLine('| {1} | {2} | {3} |', board[6], board[7], board[8]);
 
-        }
 
-        //Contain a method that receives the game board array as input and returns if there is a winner and who it was
-        public static void Winner()
-        {
-            flag = 0;
-            while flag =! 1
+
+            //Contain a method that prints the board based on the information passed in
+            public static void BoardPrint()
             {
-                if array[0] == board[1] && board[1] == board[2]
+                Console.WriteLine('|   |   |   |');
+                Console.WriteLine('| {1} | {2} | {3} |', arr[0], arr[1], arr[2]);
+                Console.WriteLine('|___________|');
+                Console.WriteLine('|   |   |   |');
+                Console.WriteLine('| {1} | {2} | {3} |', arr[3], arr[4], arr[5]);
+                Console.WriteLine('|___________|');
+                Console.WriteLine('|   |   |   |');
+                Console.WriteLine('| {1} | {2} | {3} |', arr[6], arr[7], arr[8]);
+
+            }
+
+            //Contain a method that receives the game board array as input and returns if there is a winner and who it was
+            public static void Winner()
+            {
+                flag = 0;
+                while flag = !1
                 {
-                    flag = 1;
-                    Console.WriteLine(board[0] + ' is the winner!')
-                }
-                if board[3] == board[4] && board[4] == board[5]
-                {
-                    flag = 1;
-                    Console.WriteLine(board[3] + ' is the winner!')
-                }
-                if board[6] == board[7] && board[7] == board[8]
-                {
-                    flag = 1;
-                    Console.WriteLine(board[6] + ' is the winner!')
-                }
-                if board[0] == board[4] && board[4] == board[8]
-                {
-                    flag = 1;
-                    Console.WriteLine(board[0] + ' is the winner!')
-                }
-                if board[2] == board[4] && board[4] == board[6]
-                {
-                    flag = 1;
-                    Console.WriteLine(board[2] + ' is the winner!')
+                    if array[0] == arr[1] && arr[1] == arr[2]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[0] + ' is the winner!')
+                    }
+                    if arr[3] == arr[4] && arr[4] == arr[5]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[3] + ' is the winner!')
+                    }
+                    if arr[6] == arr[7] && arr[7] == arr[8]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[6] + ' is the winner!')
+                    }
+                    if arr[0] == arr[4] && arr[4] == arr[8]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[0] + ' is the winner!')
+                    }
+                    if arr[2] == arr[4] && arr[4] == arr[6]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[2] + ' is the winner!')
+                    }
                 }
             }
         }
