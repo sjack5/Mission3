@@ -14,40 +14,46 @@ namespace Mission3
         public static void BoardPrint()
         {
             Console.WriteLine('|   |   |   |');
+            Console.WriteLine('| {1} | {2} | {3} |', board[0], board[1], board[2]);
+            Console.WriteLine('|___________|');
             Console.WriteLine('|   |   |   |');
+            Console.WriteLine('| {1} | {2} | {3} |', board[3], board[4], board[5]);
+            Console.WriteLine('|___________|');
             Console.WriteLine('|   |   |   |');
+            Console.WriteLine('| {1} | {2} | {3} |', board[6], board[7], board[8]);
+
         }
 
-         //Contain a method that receives the game board array as input and returns if there is a winner and who it was
-         public static void Winner()
+        //Contain a method that receives the game board array as input and returns if there is a winner and who it was
+        public static void Winner()
         {
             flag = 0;
             while flag =! 1
             {
-                if array[0] == array[1] && array[1] == array[2]
+                if array[0] == board[1] && board[1] == board[2]
                 {
                     flag = 1;
-                    Console.WriteLine(array[0] + ' is the winner!')
+                    Console.WriteLine(board[0] + ' is the winner!')
                 }
-                if array[3] == array[4] && array[4] == array[5]
+                if board[3] == board[4] && board[4] == board[5]
                 {
                     flag = 1;
-                    Console.WriteLine(array[3] + ' is the winner!')
+                    Console.WriteLine(board[3] + ' is the winner!')
                 }
-                if array[6] == array[7] && array[7] == array[8]
+                if board[6] == board[7] && board[7] == board[8]
                 {
                     flag = 1;
-                    Console.WriteLine(array[6] + ' is the winner!')
+                    Console.WriteLine(board[6] + ' is the winner!')
                 }
-                if array[0] == array[4] && array[4] == array[8]
+                if board[0] == board[4] && board[4] == board[8]
                 {
                     flag = 1;
-                    Console.WriteLine(array[0] + ' is the winner!')
+                    Console.WriteLine(board[0] + ' is the winner!')
                 }
-                if array[2] == array[4] && array[4] == array[6]
+                if board[2] == board[4] && board[4] == board[6]
                 {
                     flag = 1;
-                    Console.WriteLine(array[2] + ' is the winner!')
+                    Console.WriteLine(board[2] + ' is the winner!')
                 }
             }
         }
