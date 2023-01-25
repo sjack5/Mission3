@@ -9,59 +9,57 @@ namespace Mission3
     public class supporting
     {
         //Receive the “board” array from the driver class
-        public static void recieve(char[] arr)
+        
+
+        //Contain a method that prints the board based on the information passed in
+        public static void BoardPrint(char[] arr)
         {
+            Console.WriteLine('|   |   |   |');
+            Console.WriteLine('| {1} | {2} | {3} |', arr[0], arr[1], arr[2]);
+            Console.WriteLine('|___________|');
+            Console.WriteLine('|   |   |   |');
+            Console.WriteLine('| {1} | {2} | {3} |', arr[3], arr[4], arr[5]);
+            Console.WriteLine('|___________|');
+            Console.WriteLine('|   |   |   |');
+            Console.WriteLine('| {1} | {2} | {3} |', arr[6], arr[7], arr[8]);
 
-            //Contain a method that prints the board based on the information passed in
-            public static void BoardPrint()
+        }
+
+        //Contain a method that receives the game board array as input and returns if there is a winner and who it was
+        public static void Winner(char[] arr)
+        {
+            flag = 0;
+            while flag =! 1
             {
-                Console.WriteLine('|   |   |   |');
-                Console.WriteLine('| {1} | {2} | {3} |', arr[0], arr[1], arr[2]);
-                Console.WriteLine('|___________|');
-                Console.WriteLine('|   |   |   |');
-                Console.WriteLine('| {1} | {2} | {3} |', arr[3], arr[4], arr[5]);
-                Console.WriteLine('|___________|');
-                Console.WriteLine('|   |   |   |');
-                Console.WriteLine('| {1} | {2} | {3} |', arr[6], arr[7], arr[8]);
-
-            }
-
-            //Contain a method that receives the game board array as input and returns if there is a winner and who it was
-            public static void Winner()
-            {
-                flag = 0;
-                while flag =! 1
+                for (i = 0; i <= 8; i++) 
                 {
-                    for (i = 0; i <= 8; i++) 
+                    if array[0] == arr[1] && arr[1] == arr[2]
                     {
-                        if array[0] == arr[1] && arr[1] == arr[2]
-                        {
-                            flag = 1;
-                            Console.WriteLine(arr[0] + ' is the winner!')
-                        }
-                        if arr[3] == arr[4] && arr[4] == arr[5]
-                        {
-                            flag = 1;
-                            Console.WriteLine(arr[3] + ' is the winner!')
-                        }
-                        if arr[6] == arr[7] && arr[7] == arr[8]
-                        {
-                            flag = 1;
-                            Console.WriteLine(arr[6] + ' is the winner!')
-                        }
-                        if arr[0] == arr[4] && arr[4] == arr[8]
-                        {
-                            flag = 1;
-                            Console.WriteLine(arr[0] + ' is the winner!')
-                        }
-                        if arr[2] == arr[4] && arr[4] == arr[6]
-                        {
-                            flag = 1;
-                            Console.WriteLine(arr[2] + ' is the winner!')
-                        }
+                        flag = 1;
+                        Console.WriteLine(arr[0] + ' is the winner!')
                     }
-                    Console.WriteLine('Game is a Tie!')
+                    if arr[3] == arr[4] && arr[4] == arr[5]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[3] + ' is the winner!')
+                    }
+                    if arr[6] == arr[7] && arr[7] == arr[8]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[6] + ' is the winner!')
+                    }
+                    if arr[0] == arr[4] && arr[4] == arr[8]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[0] + ' is the winner!')
+                    }
+                    if arr[2] == arr[4] && arr[4] == arr[6]
+                    {
+                        flag = 1;
+                        Console.WriteLine(arr[2] + ' is the winner!')
+                    }
                 }
+                Console.WriteLine('Game is a Tie!')
             }
         }
     }
