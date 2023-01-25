@@ -24,7 +24,7 @@ namespace Mission3
         }
 
         //Contain a method that receives the game board array as input and returns if there is a winner and who it was
-        public Winner(char[] arr)
+        public char Winner(char[] arr)
         {
             int flag = 0;
             while (flag != 1)
@@ -34,30 +34,30 @@ namespace Mission3
                     if (arr[0] == arr[1] && arr[1] == arr[2])
                     {
                         flag = 1;
-                        return ((int)arr[0]);
+                        return ((char)arr[0]);
                     }
                     if (arr[3] == arr[4] && arr[4] == arr[5])
                     {
                         flag = 1; 
-                        return ((int)arr[3]);
+                        return ((char)arr[3]);
 
                     }
                     if (arr[6] == arr[7] && arr[7] == arr[8])
                     {
                         flag = 1; 
-                        return ((int)arr[6]);
+                        return ((char)arr[6]);
 
                     }
                     if (arr[0] == arr[4] && arr[4] == arr[8])
                     {
                         flag = 1; 
-                        return ((int)arr[0]);
+                        return ((char)arr[0]);
 
                     }
                     if (arr[2] == arr[4] && arr[4] == arr[6])
                     {
                         flag = 1; 
-                        return ((int)arr[2]);
+                        return ((char)arr[2]);
 
                     }
                 }
