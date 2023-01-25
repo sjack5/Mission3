@@ -12,8 +12,6 @@ namespace Mission3
         public static void recieve(char[] arr)
         {
 
-
-
             //Contain a method that prints the board based on the information passed in
             public static void BoardPrint()
             {
