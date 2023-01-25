@@ -42,7 +42,6 @@ namespace Mission3
 
                     char test = otherTeam.Winner(board);
 
-                    Console.WriteLine(test);
 
                     if (test == 'O')
                     {
