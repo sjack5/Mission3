@@ -34,31 +34,35 @@ namespace Mission3
                 flag = 0;
                 while flag =! 1
                 {
-                    if array[0] == arr[1] && arr[1] == arr[2]
+                    for (i = 0; i <= 8; i++) 
                     {
-                        flag = 1;
-                        Console.WriteLine(arr[0] + ' is the winner!')
+                        if array[0] == arr[1] && arr[1] == arr[2]
+                        {
+                            flag = 1;
+                            Console.WriteLine(arr[0] + ' is the winner!')
+                        }
+                        if arr[3] == arr[4] && arr[4] == arr[5]
+                        {
+                            flag = 1;
+                            Console.WriteLine(arr[3] + ' is the winner!')
+                        }
+                        if arr[6] == arr[7] && arr[7] == arr[8]
+                        {
+                            flag = 1;
+                            Console.WriteLine(arr[6] + ' is the winner!')
+                        }
+                        if arr[0] == arr[4] && arr[4] == arr[8]
+                        {
+                            flag = 1;
+                            Console.WriteLine(arr[0] + ' is the winner!')
+                        }
+                        if arr[2] == arr[4] && arr[4] == arr[6]
+                        {
+                            flag = 1;
+                            Console.WriteLine(arr[2] + ' is the winner!')
+                        }
                     }
-                    if arr[3] == arr[4] && arr[4] == arr[5]
-                    {
-                        flag = 1;
-                        Console.WriteLine(arr[3] + ' is the winner!')
-                    }
-                    if arr[6] == arr[7] && arr[7] == arr[8]
-                    {
-                        flag = 1;
-                        Console.WriteLine(arr[6] + ' is the winner!')
-                    }
-                    if arr[0] == arr[4] && arr[4] == arr[8]
-                    {
-                        flag = 1;
-                        Console.WriteLine(arr[0] + ' is the winner!')
-                    }
-                    if arr[2] == arr[4] && arr[4] == arr[6]
-                    {
-                        flag = 1;
-                        Console.WriteLine(arr[2] + ' is the winner!')
-                    }
+                    Console.WriteLine('Game is a Tie!')
                 }
             }
         }
