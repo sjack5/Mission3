@@ -9,8 +9,6 @@ namespace Mission3
     public class supporting
     {
         //Receive the “board” array from the driver class
-        
-
         //Contain a method that prints the board based on the information passed in
         public void BoardPrint(char[] arr)
         {
@@ -36,30 +34,30 @@ namespace Mission3
                     if (arr[0] == arr[1] && arr[1] == arr[2])
                     {
                         flag = 1;
-                        return (arr[0]);
+                        return ((int)arr[0]);
                     }
                     if (arr[3] == arr[4] && arr[4] == arr[5])
                     {
                         flag = 1; 
-                        return (arr[3]);
+                        return ((int)arr[3]);
 
                     }
                     if (arr[6] == arr[7] && arr[7] == arr[8])
                     {
                         flag = 1; 
-                        return (arr[6]);
+                        return ((int)arr[6]);
 
                     }
                     if (arr[0] == arr[4] && arr[4] == arr[8])
                     {
                         flag = 1; 
-                        return (arr[0]);
+                        return ((int)arr[0]);
 
                     }
                     if (arr[2] == arr[4] && arr[4] == arr[6])
                     {
                         flag = 1; 
-                        return (arr[2]);
+                        return ((int)arr[2]);
 
                     }
                 }
